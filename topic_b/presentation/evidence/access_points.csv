@@ -1,0 +1,7 @@
+id,project,path,language,line,end_line,callee,candidate_style,reviewed_style,review_status
+9b5939b0fb5f6c82edb5,javascript,javascript/access.js,javascript,3,3,db.query,raw,,pending
+97a64ef721374b100304,javascript,javascript/access.js,javascript,4,4,where,query_builder,,pending
+752e30585e5ce946154f,javascript,javascript/access.js,javascript,5,5,User.findAll,orm,,pending
+860d76f4b93b742c45cd,python,python/access.py,python,5,5,cursor.execute,raw,,pending
+333c8a2bb714d969ca86,python,python/access.py,python,6,6,session.execute,raw,,pending
+8cb34e0e3003bf8894f7,python,python/access.py,python,7,7,User.objects.filter,orm,,pending

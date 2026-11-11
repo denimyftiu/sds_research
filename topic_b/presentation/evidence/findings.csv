@@ -1,0 +1,6 @@
+id,tool,profile,project,path,line,end_line,rule,severity,access_id,candidate_style,match_status
+6c36a4bf574597c6568a,semgrep,pilot-custom,javascript,javascript/access.js,3,3,topic_a.rules.pilot.dynamic-sql.javascript,WARNING,9b5939b0fb5f6c82edb5,raw,matched
+5f82f6bdf19db500e9bd,semgrep,pilot-custom,python,python/access.py,5,5,topic_a.rules.pilot.dynamic-sql.python,WARNING,860d76f4b93b742c45cd,raw,matched
+f82b619e0058b4828480,opengrep,pilot-custom,javascript,javascript/access.js,3,3,topic_a.rules.pilot.dynamic-sql.javascript,WARNING,9b5939b0fb5f6c82edb5,raw,matched
+aa3d75d2ea3fb7c1b67e,opengrep,pilot-custom,python,python/access.py,5,5,topic_a.rules.pilot.dynamic-sql.python,WARNING,860d76f4b93b742c45cd,raw,matched
+98354b3d103d7d39389b,bandit,pilot-custom,python,python/access.py,5,5,B608,MEDIUM,860d76f4b93b742c45cd,raw,matched

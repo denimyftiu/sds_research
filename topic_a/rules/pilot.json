@@ -1,0 +1,73 @@
+{
+  "rules": [
+    {
+      "id": "pilot.dynamic-sql.python",
+      "languages": [
+        "python"
+      ],
+      "severity": "WARNING",
+      "message": "Dynamic SQL construction requires manual dataflow review (CWE-89 candidate).",
+      "metadata": {
+        "cwe": "CWE-89",
+        "profile": "pilot-custom"
+      },
+      "patterns": [
+        {
+          "pattern-either": [
+            {
+              "pattern": "$X.execute($Q, ...)"
+            },
+            {
+              "pattern": "$X.raw($Q, ...)"
+            },
+            {
+              "pattern": "$X.query($Q, ...)"
+            },
+            {
+              "pattern": "text($Q)"
+            }
+          ]
+        },
+        {
+          "metavariable-regex": {
+            "metavariable": "$Q",
+            "regex": "(?s).*(\\+|f[\\\"\\']|%|\\.format\\().*"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pilot.dynamic-sql.javascript",
+      "languages": [
+        "javascript"
+      ],
+      "severity": "WARNING",
+      "message": "Dynamic SQL construction requires manual dataflow review (CWE-89 candidate).",
+      "metadata": {
+        "cwe": "CWE-89",
+        "profile": "pilot-custom"
+      },
+      "patterns": [
+        {
+          "pattern-either": [
+            {
+              "pattern": "$X.query($Q, ...)"
+            },
+            {
+              "pattern": "$X.raw($Q, ...)"
+            },
+            {
+              "pattern": "$X.whereRaw($Q, ...)"
+            }
+          ]
+        },
+        {
+          "metavariable-regex": {
+            "metavariable": "$Q",
+            "regex": "(?s).*(\\+|\\$\\{).*"
+          }
+        }
+      ]
+    }
+  ]
+}

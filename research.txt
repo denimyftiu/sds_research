@@ -1,0 +1,81 @@
+Option T2-A (Benchmark the tools): Do SAST Tools Find Unsafe Database Access? A Comparative
+Evaluation of Open-Source Static Analysers on Labelled SQL-Related Weaknesses
+Expected contribution. Benchmarking SAST tools on the OWASP Benchmark alone is well studied, so
+
+the contribution must be a new labelled micro-benchmark of modern ORM raw-query and query-
+builder patterns (for example Django raw(), SQLAlchemy text(), Sequelize query()) and current tool
+
+versions evaluated on it.
+Research questions
+• RQ1: What recall and precision do the selected SAST tools achieve on CWE-89 and related test
+cases?
+• RQ2: How much do the tools agree with each other, and does combining two tools improve
+results?
+• RQ3: Which code patterns are consistently missed or falsely reported?
+Method
+• Run every tool with default and with tuned rule sets on the benchmark, pinning versions.
+• Score results automatically against the benchmark ground truth and compute per-tool and
+combined metrics.
+• Manually analyse a stratified sample of misses and false alarms to build a pattern catalogue.
+Minimum scale for the bonus. At least 60 labelled test cases (safe and unsafe pairs) across at least 2
+languages, at least 3 tools, default and tuned rule sets.
+
+Option T2-B (Study real code): Raw SQL, Query Builders or ORMs? An Empirical Study of How
+Database Access Style Affects Static Analysis Findings in Open-Source Projects
+Expected contribution. Empirical evidence on whether access style (raw SQL, query builder, ORM)
+changes the density and accuracy of SQL-related findings in real projects.
+Research questions
+• RQ1: How are raw SQL, query builders and ORMs distributed across the selected projects?
+• RQ2: Does the density of SQL-related SAST findings differ between access styles?
+• RQ3: What share of findings in each style are true problems after manual review?
+Method
+• Select at least 20 open-source projects in one or two languages and classify every database
+access point by style using scripts and manual checks.
+• Run the two best tools from Sub-topic A and normalise findings per access point.
+• Manually review a random sample of findings per style and test the difference statistically.
+Minimum scale for the bonus. At least 20 projects, every access point classified, at least 100 findings
+manually reviewed, statistical test (for example chi-square or Mann-Whitney) reported.
+
+Option T2-C (Integrate into the workflow): From Alert to Fix: Measuring the Cost and Effectiveness
+of SAST Gates for Database Access Code in a CI/CD Pipeline
+Expected contribution. Measured cost and benefit of different SAST gate policies on real commit
+histories.
+Research questions
+• RQ1: How much time and compute does adding SAST gates add to a CI pipeline?
+• RQ2: How many findings survive triage, and how long does fixing them take?
+• RQ3: Which gate policy (block on any finding, block on high severity, report only) gives the
+best balance?
+Method
+
+• Build GitHub Actions or GitLab CI pipelines for at least three projects with the tools from Sub-
+topic A.
+
+• Replay a sequence of real commits (or seeded changes from the benchmark) through the
+pipeline under each gate policy.
+• Measure pipeline duration, blocked builds, triage effort and fix time; use Sub-topic B review
+data to estimate false-alarm cost.
+Minimum scale for the bonus. At least 3 projects, at least 200 replayed commits, every gate policy
+evaluated on the same commits.
+
+
+EXTRA INSTRUCTIONS
+Option T2-C (Integrate into the workflow): From Alert to Fix: Measuring the Cost and Effectiveness
+of SAST Gates for Database Access Code in a CI/CD Pipeline
+Expected contribution. Measured cost and benefit of different SAST gate policies on real commit
+histories.
+Research questions
+• RQ1: How much time and compute does adding SAST gates add to a CI pipeline?
+• RQ2: How many findings survive triage, and how long does fixing them take?
+• RQ3: Which gate policy (block on any finding, block on high severity, report only) gives the
+best balance?
+Method
+
+• Build GitHub Actions or GitLab CI pipelines for at least three projects with the tools from Sub-
+topic A.
+
+• Replay a sequence of real commits (or seeded changes from the benchmark) through the
+pipeline under each gate policy.
+• Measure pipeline duration, blocked builds, triage effort and fix time; use Sub-topic B review
+data to estimate false-alarm cost.
+Minimum scale for the bonus. At least 3 projects, at least 200 replayed commits, every gate policy
+evaluated on the same commits.

@@ -1,0 +1,9 @@
+{
+  "seed": 20261111,
+  "per_style_limit": 34,
+  "population": {
+    "raw": 5
+  },
+  "selected": 5,
+  "note": "Candidate-style strata; freeze audited classifications and resample before final study."
+}

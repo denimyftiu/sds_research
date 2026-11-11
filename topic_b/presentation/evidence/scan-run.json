@@ -1,0 +1,67 @@
+{
+  "target": "/workspace/topic_b/pilot",
+  "profile": "pilot-custom",
+  "rules_sha256": "4452228c08bda2cac03ff7deeff7f6e5482fdb3a801265e827468fb7c6f17e4a",
+  "files": {
+    "javascript/access.js": "a973e374717dbac4380c4f02ef2183fb055e56a41e410e339fd1c59c12578246",
+    "python/access.py": "d8da7c8359031d285e8ce44059a360942a422c53ef39de6bf783841bced8e4cc"
+  },
+  "runs": {
+    "semgrep": {
+      "valid": true,
+      "command": [
+        "semgrep",
+        "scan",
+        "--config",
+        "/workspace/topic_a/rules/pilot.json",
+        "--metrics=off",
+        "--disable-version-check",
+        "--no-git-ignore",
+        "--json",
+        "/workspace/topic_b/pilot"
+      ],
+      "version": "1.185.0",
+      "seconds": 2.245218128999113,
+      "returncode": 0,
+      "stderr": "               \n               \n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502 Scan Status \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n  Scanning 2 files with 2 Code rules:\n                                                                                                                        \n  Language   Rules   Files          Origin   Rules                                                                      \n \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500        \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500                                                                     \n  python         1       1          Custom       2                                                                      \n  js             1       1                                                                                              \n                                                                                                                        \n                \n                \n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502 Scan Summary \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\u2705 Scan completed successfully.\n \u2022 Findings: 2 (2 blocking)\n \u2022 Rules run: 2\n \u2022 Targets scanned: 2\n \u2022 Parsed lines: ~100.0%\n \u2022 No ignore information available\nRan 2 rules on 2 files: 2 findings.\n",
+      "errors": []
+    },
+    "opengrep": {
+      "valid": true,
+      "command": [
+        "opengrep",
+        "scan",
+        "--config",
+        "/workspace/topic_a/rules/pilot.json",
+        "--disable-version-check",
+        "--no-git-ignore",
+        "--json",
+        "/workspace/topic_b/pilot"
+      ],
+      "version": "1.33.1",
+      "seconds": 2.428701376004028,
+      "returncode": 0,
+      "stderr": "               \n               \n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502 Scan Status \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n  Scanning 2 files with 2 Code rules:\n                                                                                                                        \n  Language   Rules   Files          Origin   Rules                                                                      \n \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500        \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500                                                                     \n  python         1       1          Custom       2                                                                      \n  js             1       1                                                                                              \n                                                                                                                        \n                \n                \n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502 Scan Summary \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\nRan 2 rules on 2 files: 2 findings.\n",
+      "errors": []
+    },
+    "bandit": {
+      "valid": true,
+      "command": [
+        "bandit",
+        "-r",
+        "/workspace/topic_b/pilot",
+        "-t",
+        "B608",
+        "-f",
+        "json",
+        "--ignore-nosec"
+      ],
+      "version": "bandit 1.9.4\n  python version = 3.12.12 (main, Feb 24 2026, 20:29:11) [GCC 12.2.0]",
+      "seconds": 0.2137696749996394,
+      "returncode": 1,
+      "stderr": "[main]\tINFO\tprofile include tests: None\n[main]\tINFO\tprofile exclude tests: None\n[main]\tINFO\tcli include tests: B608\n[main]\tINFO\tcli exclude tests: None\n",
+      "errors": []
+    }
+  },
+  "python_packages": "annotated-types==0.8.0\nanyio==4.16.0\nattrs==26.1.0\nbandit==1.9.4\nboltons==21.0.0\nbracex==3.2.2\ncertifi==2026.10.23\ncffi==2.1.1\ncharset-normalizer==3.5.2\nclick==8.4.2\nclick-option-group==0.5.9\ncolorama==0.4.6\ncryptography==50.0.2\nexceptiongroup==1.2.2\nface==26.0.1\nglom==25.12.0\ngoogleapis-common-protos==1.76.0\nh11==0.16.0\nhttpcore==1.0.9\nhttpx==0.28.1\nhttpx-sse==0.4.3\nidna==3.20\nimportlib_metadata==8.7.1\njsonschema==4.25.1\njsonschema-specifications==2025.9.1\nmarkdown-it-py==4.3.0\nmcp==1.29.0\nmdurl==0.1.2\nopentelemetry-api==1.37.0\nopentelemetry-exporter-otlp-proto-common==1.37.0\nopentelemetry-exporter-otlp-proto-http==1.37.0\nopentelemetry-instrumentation==0.58b0\nopentelemetry-instrumentation-requests==0.58b0\nopentelemetry-instrumentation-threading==0.58b0\nopentelemetry-proto==1.37.0\nopentelemetry-sdk==1.37.0\nopentelemetry-semantic-conventions==0.58b0\nopentelemetry-util-http==0.58b0\npackaging==26.3\npeewee==3.19.0\nprotobuf==6.33.6\npycparser==3.12\npydantic==2.14.3\npydantic-settings==2.16.2\npydantic_core==2.50.4\nPygments==2.21.0\nPyJWT==2.15.1\npython-dotenv==1.2.4\npython-multipart==0.0.33\nPyYAML==6.0.3\nreferencing==0.37.0\nrequests==2.34.2\nrich==15.0.0\nrpds-py==2026.9.1\nruamel.yaml==0.19.1\nruamel.yaml.clib==0.2.15\nsemantic-version==2.10.0\nsemgrep==1.185.0\nsse-starlette==3.7.0\nstarlette==1.10.0\nstevedore==5.9.1\nstructlog==26.1.0\ntomli==2.4.1\ntyping-inspection==0.4.5\ntyping_extensions==4.16.0\nurllib3==2.8.0\nuvicorn==0.54.0\nwcmatch==8.5.2\nwrapt==1.17.3\nzipp==4.1.2\n"
+}

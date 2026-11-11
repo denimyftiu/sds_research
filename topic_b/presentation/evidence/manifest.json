@@ -1,0 +1,16 @@
+{
+  "checkpoint": "2026-11-11",
+  "source_b_run": "artifacts/b/runs/pilot-rbq2l5l9",
+  "synthetic": true,
+  "report_origin": "report.corrected.json, regenerated locally after fixing per-tool aggregation; other B files copied from the completed Docker run",
+  "files": {
+    "a-pilot-scores.json": "fa96a67f2e3bac0d7cd11383e3309d8ac129d465856ef4c9605e4e884af920c9",
+    "access_points.csv": "4df1bcb4cb953d37baee7a8e58944abdf4911a3aff13b2f5a2ebc8302efe850e",
+    "access_points.csv.coverage.json": "f5d3286f1ec338de76c59efe3bad541d3b37ec03767bf58e5a3aff601e9b9c2e",
+    "findings.csv": "0c802ad3ff637e7a86a03a2b9abcbbb4d255511f2c2699870348dd1f3b4ba4ae",
+    "report.json": "88bf27cbc638bd90836a9e00bc32b49fb5e3c9a04108974c0ede1a0003e49778",
+    "review.csv": "375c791d9fafacc60dea9dccabb00882b006a07287eb5eab120ffabd98723f28",
+    "review.csv.sampling.json": "f5a0854182a592f02dc782544c96d3fa32b98f438b6947907b782afcb593d905",
+    "scan-run.json": "1d6f178800c43ffe298863f31f1136bb751003cf41571123ed904e450205871c"
+  }
+}

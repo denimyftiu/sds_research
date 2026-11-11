@@ -1,0 +1,12 @@
+{
+  "source_files": 2,
+  "parse_failures": [],
+  "classification": "candidate-only",
+  "limitations": [
+    "Unresolved receiver types and aliases",
+    "JavaScript/TypeScript lexical candidates; manual full-file audit required",
+    "Excluded generated/vendor/build directories",
+    "Python nested/fluent calls collapsed heuristically; review point granularity"
+  ],
+  "full_audit_complete": false
+}

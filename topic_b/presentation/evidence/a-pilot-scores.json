@@ -1,0 +1,50 @@
+{
+  "status": "pilot-only; not a best-tool selection",
+  "profile": "pilot-custom",
+  "metrics": {
+    "semgrep": {
+      "tp": 7,
+      "fp": 1,
+      "tn": 7,
+      "fn": 1,
+      "precision": 0.875,
+      "recall": 0.875,
+      "case_count": 16,
+      "misses": [
+        "python/django_extra_unsafe.py"
+      ],
+      "false_alarms": [
+        "python/django_raw_safe.py"
+      ]
+    },
+    "opengrep": {
+      "tp": 7,
+      "fp": 1,
+      "tn": 7,
+      "fn": 1,
+      "precision": 0.875,
+      "recall": 0.875,
+      "case_count": 16,
+      "misses": [
+        "python/django_extra_unsafe.py"
+      ],
+      "false_alarms": [
+        "python/django_raw_safe.py"
+      ]
+    },
+    "bandit": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 4,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.75,
+      "case_count": 8,
+      "misses": [
+        "python/django_extra_unsafe.py"
+      ],
+      "false_alarms": []
+    }
+  },
+  "limitation": "Semgrep and Opengrep share engine ancestry and identical custom rules; Bandit is Python-only."
+}

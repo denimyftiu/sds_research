@@ -1,0 +1,178 @@
+[
+  {
+    "id": "python/dbapi_safe.py",
+    "path": "python/dbapi_safe.py",
+    "language": "python",
+    "pattern": "dbapi",
+    "vulnerable": false,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 2
+  },
+  {
+    "id": "python/dbapi_unsafe.py",
+    "path": "python/dbapi_unsafe.py",
+    "language": "python",
+    "pattern": "dbapi",
+    "vulnerable": true,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 2
+  },
+  {
+    "id": "python/django_raw_safe.py",
+    "path": "python/django_raw_safe.py",
+    "language": "python",
+    "pattern": "django_raw",
+    "vulnerable": false,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 2
+  },
+  {
+    "id": "python/django_raw_unsafe.py",
+    "path": "python/django_raw_unsafe.py",
+    "language": "python",
+    "pattern": "django_raw",
+    "vulnerable": true,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 2
+  },
+  {
+    "id": "python/sqlalchemy_text_safe.py",
+    "path": "python/sqlalchemy_text_safe.py",
+    "language": "python",
+    "pattern": "sqlalchemy_text",
+    "vulnerable": false,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 3
+  },
+  {
+    "id": "python/sqlalchemy_text_unsafe.py",
+    "path": "python/sqlalchemy_text_unsafe.py",
+    "language": "python",
+    "pattern": "sqlalchemy_text",
+    "vulnerable": true,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 3
+  },
+  {
+    "id": "python/django_extra_safe.py",
+    "path": "python/django_extra_safe.py",
+    "language": "python",
+    "pattern": "django_extra",
+    "vulnerable": false,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 2
+  },
+  {
+    "id": "python/django_extra_unsafe.py",
+    "path": "python/django_extra_unsafe.py",
+    "language": "python",
+    "pattern": "django_extra",
+    "vulnerable": true,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 2
+  },
+  {
+    "id": "javascript/sequelize_query_safe.js",
+    "path": "javascript/sequelize_query_safe.js",
+    "language": "javascript",
+    "pattern": "sequelize_query",
+    "vulnerable": false,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 3
+  },
+  {
+    "id": "javascript/sequelize_query_unsafe.js",
+    "path": "javascript/sequelize_query_unsafe.js",
+    "language": "javascript",
+    "pattern": "sequelize_query",
+    "vulnerable": true,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 3
+  },
+  {
+    "id": "javascript/knex_raw_safe.js",
+    "path": "javascript/knex_raw_safe.js",
+    "language": "javascript",
+    "pattern": "knex_raw",
+    "vulnerable": false,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 3
+  },
+  {
+    "id": "javascript/knex_raw_unsafe.js",
+    "path": "javascript/knex_raw_unsafe.js",
+    "language": "javascript",
+    "pattern": "knex_raw",
+    "vulnerable": true,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 3
+  },
+  {
+    "id": "javascript/knex_where_safe.js",
+    "path": "javascript/knex_where_safe.js",
+    "language": "javascript",
+    "pattern": "knex_where",
+    "vulnerable": false,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 3
+  },
+  {
+    "id": "javascript/knex_where_unsafe.js",
+    "path": "javascript/knex_where_unsafe.js",
+    "language": "javascript",
+    "pattern": "knex_where",
+    "vulnerable": true,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 3
+  },
+  {
+    "id": "javascript/sequelize_concat_safe.js",
+    "path": "javascript/sequelize_concat_safe.js",
+    "language": "javascript",
+    "pattern": "sequelize_concat",
+    "vulnerable": false,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 3
+  },
+  {
+    "id": "javascript/sequelize_concat_unsafe.js",
+    "path": "javascript/sequelize_concat_unsafe.js",
+    "language": "javascript",
+    "pattern": "sequelize_concat",
+    "vulnerable": true,
+    "cwe": 89,
+    "assumption": "value is untrusted request input; standard API semantics",
+    "start_line": 1,
+    "end_line": 3
+  }
+]

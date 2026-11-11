@@ -1,0 +1,15 @@
+services:
+  lab:
+    build: .
+    platform: linux/amd64
+    user: "${LAB_UID:-1000}:${LAB_GID:-1000}"
+    environment:
+      HOME: /tmp/lab-home
+    volumes:
+      - .:/workspace
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    network_mode: none
+  fetch:
+    extends: lab
+    network_mode: bridge

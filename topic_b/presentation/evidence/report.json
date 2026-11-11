@@ -1,0 +1,100 @@
+{
+  "status": "WIP candidate densities only; no validated prevalence or precision claims",
+  "groups": [
+    {
+      "project": "javascript",
+      "style": "orm",
+      "access_candidates": 1,
+      "findings": {
+        "semgrep": 0,
+        "opengrep": 0
+      },
+      "flagged_access_points": {
+        "semgrep": 0,
+        "opengrep": 0
+      },
+      "candidate_findings_per_100_points": {
+        "semgrep": 0.0,
+        "opengrep": 0.0
+      }
+    },
+    {
+      "project": "javascript",
+      "style": "query_builder",
+      "access_candidates": 1,
+      "findings": {
+        "semgrep": 0,
+        "opengrep": 0
+      },
+      "flagged_access_points": {
+        "semgrep": 0,
+        "opengrep": 0
+      },
+      "candidate_findings_per_100_points": {
+        "semgrep": 0.0,
+        "opengrep": 0.0
+      }
+    },
+    {
+      "project": "javascript",
+      "style": "raw",
+      "access_candidates": 1,
+      "findings": {
+        "semgrep": 1,
+        "opengrep": 1
+      },
+      "flagged_access_points": {
+        "semgrep": 1,
+        "opengrep": 1
+      },
+      "candidate_findings_per_100_points": {
+        "semgrep": 100.0,
+        "opengrep": 100.0
+      }
+    },
+    {
+      "project": "python",
+      "style": "orm",
+      "access_candidates": 1,
+      "findings": {
+        "semgrep": 0,
+        "opengrep": 0,
+        "bandit": 0
+      },
+      "flagged_access_points": {
+        "semgrep": 0,
+        "opengrep": 0,
+        "bandit": 0
+      },
+      "candidate_findings_per_100_points": {
+        "semgrep": 0.0,
+        "opengrep": 0.0,
+        "bandit": 0.0
+      }
+    },
+    {
+      "project": "python",
+      "style": "raw",
+      "access_candidates": 2,
+      "findings": {
+        "semgrep": 1,
+        "opengrep": 1,
+        "bandit": 1
+      },
+      "flagged_access_points": {
+        "semgrep": 1,
+        "opengrep": 1,
+        "bandit": 1
+      },
+      "candidate_findings_per_100_points": {
+        "semgrep": 50.0,
+        "opengrep": 50.0,
+        "bandit": 50.0
+      }
+    }
+  ],
+  "unmapped_findings": 0,
+  "reviewed_points": 0,
+  "total_points": 6,
+  "inference": "Deferred until snapshots, full access-point audits and manual finding reviews are complete."
+}
